@@ -1,5 +1,4 @@
 FROM java:8
-COPY MultiThreadChatServerSync.java /var/www/java/MultiThreadChatServerSync.java
+COPY MultiThreadChatServer.java /var/www/java/MultiThreadChatServer.java
 WORKDIR /var/www/java
-RUN javac MultiThreadChatServerSync.java
-CMD ["java", "MultiThreadChatServerSync"]
+CMD ["java", "MultiThreadChatServer"]
